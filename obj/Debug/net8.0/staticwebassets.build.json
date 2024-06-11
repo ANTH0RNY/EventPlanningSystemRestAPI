@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eDSeTf3oQDhBmkJtK3ea9wxt07tl+/8cLyQcosjfJ1E=",
+  "Source": "EventPlanningSystemRestAPI",
+  "BasePath": "_content/EventPlanningSystemRestAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
