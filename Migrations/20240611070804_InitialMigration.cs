@@ -15,15 +15,15 @@ namespace EventPlanningSystemRestAPI.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    UserType = table.Column<string>(type: "TEXT", nullable: true),
-                    Password_harsh = table.Column<string>(type: "TEXT", nullable: true),
-                    Permissions = table.Column<int>(type: "INTEGER", nullable: false),
-                    Location = table.Column<string>(type: "TEXT", nullable: true),
-                    MemberSince = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    LastSeen = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserType = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password_harsh = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Permissions = table.Column<int>(type: "int", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MemberSince = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastSeen = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
